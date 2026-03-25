@@ -1,59 +1,99 @@
 # HiTrade
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.3.
+HiTrade is a full-stack wholesale marketplace for Korean products in the CIS region.
 
-## Development server
+## Description
 
-To start a local development server, run:
+The purpose of this project is to develop a modern B2B-style web platform where users can browse Korean wholesale products, authenticate securely, interact with product data through APIs, and manage ordering-related actions.
 
-```bash
-ng serve
-```
+This project is built according to the course requirements for both front-end and back-end development:
+- Angular for the client side
+- Django + Django REST Framework for the server side
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Project Goal
 
-## Code scaffolding
+HiTrade is designed for suppliers and buyers in the CIS market who want to sell and purchase Korean goods in bulk through a convenient online platform.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Main Features
 
-```bash
-ng generate component component-name
-```
+- Wholesale catalog of Korean products
+- Product categories
+- User registration and login
+- JWT authentication
+- Product browsing and ordering
+- Supplier and buyer interaction
+- API-based communication between front-end and back-end
+- Navigation between multiple pages
+- Form handling and validation
+- Error handling for failed API requests
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Front-End Requirements Coverage
 
-```bash
-ng generate --help
-```
+The Angular front-end is planned to include:
 
-## Building
+- Interfaces and services for working with back-end APIs
+- At least 4 click events that trigger API requests
+- At least 4 form controls using `[(ngModel)]`
+- Basic CSS styling for components
+- Routing module with at least 3 named routes
+- `@for` for looping over data and `@if` for conditional rendering
+- JWT authentication
+- HTTP interceptor for attaching tokens
+- Login page and logout functionality
+- Angular service using `HttpClient`
+- Graceful API error handling
 
-To build the project run:
+## Back-End Requirements Coverage
 
-```bash
-ng build
-```
+The Django + DRF back-end is planned to include:
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- At least 4 models
+- At least 2 ForeignKey relationships
+- At least 2 serializers using `serializers.Serializer`
+- At least 2 serializers using `serializers.ModelSerializer`
+- At least 2 Function-Based Views (FBV)
+- At least 2 Class-Based Views (CBV) using `APIView`
+- REST API endpoints for front-end integration
 
-## Running unit tests
+## Planned Models
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Possible models for the project:
 
-```bash
-ng test
-```
+- User
+- Supplier
+- Category
+- Product
+- Order
+- OrderItem
 
-## Running end-to-end tests
+## Tech Stack
 
-For end-to-end (e2e) testing, run:
+### Front-End
+- Angular
+- TypeScript
+- HTML
+- CSS
 
-```bash
-ng e2e
-```
+### Back-End
+- Django
+- Django REST Framework
+- Python
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+### Tools
+- Git
+- GitHub
+- Postman
 
-## Additional Resources
+## Team Members
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Atimbekova Yenlik
+- Symbat Mukhamedkarim
+- Inkar Bakhytkali
+
+## Project Status
+
+Currently in development. Repository initialized, README added, and Angular project template created for the pre-defense stage.
+
+## Purpose
+
+This project is created for educational purposes as part of a university full-stack development assignment.
