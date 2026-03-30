@@ -1,10 +1,10 @@
-# HiTrade
+ч# GoGlobe
 
-HiTrade is a full-stack wholesale marketplace for Korean products in the CIS region.
+GoGlobe is a full-stack travel platform designed to help users find the most suitable country to relocate to based on their preferences, goals, and personal situation.
 
 ## Description
 
-The purpose of this project is to develop a modern B2B-style web platform where users can browse Korean wholesale products, authenticate securely, interact with product data through APIs, and manage ordering-related actions.
+The purpose of this project is to develop a modern web platform where users can explore countries, compare relocation options, view important migration-related information, and receive guidance on choosing the best destination for moving abroad.
 
 This project is built according to the course requirements for both front-end and back-end development:
 - Angular for the client side
@@ -12,16 +12,20 @@ This project is built according to the course requirements for both front-end an
 
 ## Project Goal
 
-HiTrade is designed for suppliers and buyers in the CIS market who want to sell and purchase Korean goods in bulk through a convenient online platform.
+GoGlobe is designed for travelers, future migrants, students, and professionals who want to choose the best country for relocation with the help of structured and convenient online tools.
 
 ## Main Features
 
-- Wholesale catalog of Korean products
-- Product categories
+- Search for the most suitable country for relocation
+- Country comparison based on user preferences
+- Detailed country information
+- Visa and migration information
+- Cost of living overview
+- Job and education opportunities
+- Climate, language, and lifestyle details
 - User registration and login
 - JWT authentication
-- Product browsing and ordering
-- Supplier and buyer interaction
+- Personalized recommendations
 - API-based communication between front-end and back-end
 - Navigation between multiple pages
 - Form handling and validation
@@ -60,11 +64,12 @@ The Django + DRF back-end is planned to include:
 Possible models for the project:
 
 - User
-- Supplier
+- Country
 - Category
-- Product
-- Order
-- OrderItem
+- RelocationOption
+- VisaInfo
+- Review
+- FavoriteCountry
 
 ## Tech Stack
 
