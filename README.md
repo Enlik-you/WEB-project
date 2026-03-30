@@ -1,4 +1,4 @@
-ч# GoGlobe
+# GoGlobe
 
 GoGlobe is a full-stack travel platform designed to help users find the most suitable country to relocate to based on their preferences, goals, and personal situation.
 
