@@ -1,0 +1,169 @@
+<app-navbar></app-navbar>
+
+<main class="preferences-page">
+  <section class="preferences-card">
+    <div class="preferences-header">
+      <span class="preferences-badge">Step 1</span>
+      <h1>Tell us about your preferences</h1>
+      <p>
+        Fill in a few details so CountryFit can recommend your Top 5 countries
+        for permanent living.
+      </p>
+    </div>
+
+    <form class="preferences-form" (ngSubmit)="onSubmit()">
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="originCountry">Origin country</label>
+          <input
+            id="originCountry"
+            type="text"
+            [(ngModel)]="preference.originCountry"
+            name="originCountry"
+            placeholder="e.g. Kazakhstan"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="monthlyBudget">Monthly budget ($)</label>
+          <input
+            id="monthlyBudget"
+            type="number"
+            [(ngModel)]="preference.monthlyBudget"
+            name="monthlyBudget"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="familyStatus">Family status</label>
+          <select
+            id="familyStatus"
+            [(ngModel)]="preference.familyStatus"
+            name="familyStatus"
+          >
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="childrenCount">Children count</label>
+          <input
+            id="childrenCount"
+            type="number"
+            [(ngModel)]="preference.childrenCount"
+            name="childrenCount"
+            min="0"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="preferredClimate">Preferred climate</label>
+          <select
+            id="preferredClimate"
+            [(ngModel)]="preference.preferredClimate"
+            name="preferredClimate"
+          >
+            <option value="cold">Cold</option>
+            <option value="mild">Mild</option>
+            <option value="warm">Warm</option>
+          </select>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <label>
+            <input
+              type="checkbox"
+              [(ngModel)]="preference.knowsEnglish"
+              name="knowsEnglish"
+            />
+            I know English
+          </label>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <label>
+            <input
+              type="checkbox"
+              [(ngModel)]="preference.wantsLowCost"
+              name="wantsLowCost"
+            />
+            Low cost of living is important
+          </label>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <label>
+            <input
+              type="checkbox"
+              [(ngModel)]="preference.wantsHighSafety"
+              name="wantsHighSafety"
+            />
+            High safety is important
+          </label>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <label>
+            <input
+              type="checkbox"
+              [(ngModel)]="preference.wantsGoodHealthcare"
+              name="wantsGoodHealthcare"
+            />
+            Good healthcare is important
+          </label>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <label>
+            <input
+              type="checkbox"
+              [(ngModel)]="preference.wantsGoodEducation"
+              name="wantsGoodEducation"
+            />
+            Good education is important
+          </label>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <label>
+            <input
+              type="checkbox"
+              [(ngModel)]="preference.wantsStrongJobMarket"
+              name="wantsStrongJobMarket"
+            />
+            Strong job market is important
+          </label>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <label>
+            <input
+              type="checkbox"
+              [(ngModel)]="preference.wantsPoliticalStability"
+              name="wantsPoliticalStability"
+            />
+            Political stability is important
+          </label>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <label>
+            <input
+              type="checkbox"
+              [(ngModel)]="preference.wantsFamilyFriendlyCountry"
+              name="wantsFamilyFriendlyCountry"
+            />
+            Family-friendly country is important
+          </label>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="submit-btn">Save Preferences</button>
+      </div>
+    </form>
+  </section>
+</main>
+
+<app-footer></app-footer>

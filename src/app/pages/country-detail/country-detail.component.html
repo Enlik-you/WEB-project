@@ -1,0 +1,82 @@
+<app-navbar></app-navbar>
+
+<main class="country-detail-page">
+  @if (country) {
+    <section class="country-hero">
+      <div>
+        <span class="detail-badge">{{ country.continent }}</span>
+        <h1>{{ country.name }}</h1>
+        <p class="detail-description">{{ country.description }}</p>
+      </div>
+
+      <div class="detail-score-card">
+        <span>Match Score</span>
+        <strong>{{ country.score }}%</strong>
+      </div>
+    </section>
+
+    <section class="detail-grid">
+      <article class="detail-card">
+        <h3>Overview</h3>
+        <div class="detail-list">
+          <div><strong>Official language:</strong> {{ country.officialLanguage }}</div>
+          <div><strong>Climate:</strong> {{ country.climateType }}</div>
+          <div><strong>Cost level:</strong> {{ country.averageCostLevel }}</div>
+        </div>
+      </article>
+
+      <article class="detail-card">
+        <h3>Main strengths</h3>
+        <div class="reason-list">
+          @for (reason of country.reasons; track reason) {
+            <span class="reason-chip">{{ reason }}</span>
+          }
+        </div>
+      </article>
+    </section>
+
+    <section class="scores-section">
+      <h2>Quality indicators</h2>
+
+      <div class="scores-grid">
+        <div class="score-item">
+          <span>Safety</span>
+          <strong>{{ country.safetyScore }}/10</strong>
+        </div>
+        <div class="score-item">
+          <span>Healthcare</span>
+          <strong>{{ country.healthcareScore }}/10</strong>
+        </div>
+        <div class="score-item">
+          <span>Education</span>
+          <strong>{{ country.educationScore }}/10</strong>
+        </div>
+        <div class="score-item">
+          <span>Job Market</span>
+          <strong>{{ country.jobMarketScore }}/10</strong>
+        </div>
+        <div class="score-item">
+          <span>Political Stability</span>
+          <strong>{{ country.politicalStabilityScore }}/10</strong>
+        </div>
+        <div class="score-item">
+          <span>Family Friendliness</span>
+          <strong>{{ country.familyFriendlinessScore }}/10</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-actions">
+      <a class="btn btn--secondary" routerLink="/results">Back to Results</a>
+      <button class="btn btn--primary">Save Country</button>
+    </section>
+  } @else {
+    <section class="not-found-card">
+      <h2>Country not found</h2>
+      <p>We could not find the requested country.</p>
+      <a class="btn btn--secondary" routerLink="/results">Back to Results</a>
+    </section>
+  }
+</main>
+
+<app-footer></app-footer>

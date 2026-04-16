@@ -1,0 +1,54 @@
+<app-navbar></app-navbar>
+
+<main class="results-page">
+  <section class="results-header">
+    <span class="results-badge">Your Results</span>
+    <h1>Your Top 5 Countries</h1>
+    <p>
+      Based on your preferences, these countries are the best current matches
+      for permanent residence.
+    </p>
+  </section>
+
+  <section class="results-list">
+    @for (country of countries; track country.id) {
+      <article class="country-card">
+        <div class="country-card__top">
+          <div>
+            <p class="country-rank">#{{ country.id }}</p>
+            <h2>{{ country.name }}</h2>
+            <span class="country-meta">{{ country.continent }} • {{ country.climateType }}</span>
+          </div>
+
+          <div class="country-score">
+            {{ country.score }}%
+          </div>
+        </div>
+
+        <p class="country-description">
+          {{ country.description }}
+        </p>
+
+        <div class="reason-list">
+          @for (reason of country.reasons; track reason) {
+            <span class="reason-chip">{{ reason }}</span>
+          }
+        </div>
+
+        <div class="country-details">
+          <div><strong>Cost:</strong> {{ country.averageCostLevel }}</div>
+          <div><strong>Safety:</strong> {{ country.safetyScore }}/10</div>
+          <div><strong>Healthcare:</strong> {{ country.healthcareScore }}/10</div>
+          <div><strong>Jobs:</strong> {{ country.jobMarketScore }}/10</div>
+        </div>
+
+        <div class="country-actions">
+          <button class="btn btn--primary">Save Country</button>
+          <a class="btn btn--secondary" [routerLink]="['/countries', country.id]">View Details</a>
+        </div>
+      </article>
+    }
+  </section>
+</main>
+
+<app-footer></app-footer>
