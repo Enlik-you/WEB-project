@@ -17,7 +17,6 @@
 
 ![Status](https://img.shields.io/badge/status-in%20development-yellow?style=flat-square)
 ![License](https://img.shields.io/badge/license-Educational-blue?style=flat-square)
-![Made with love](https://img.shields.io/badge/made%20with-%E2%9D%A4-red?style=flat-square)
 
 </div>
 
@@ -57,36 +56,36 @@ Built as a full-stack application with **Angular** on the client side and **Djan
 
 ---
 
-## 🖥️ Front-End Architecture *(Angular)*
+## 🖥️ Front-End Requirements (Angular)
 
-The Angular client is designed around clarity, modularity, and clean API communication.
-
-**Key implementations:**
-- 🧩 Services and interfaces for API interaction
-- 🖱️ At least **4 click events** triggering API requests
-- 📝 At least **4 form controls** using `[(ngModel)]`
-- 🎨 Custom CSS styling for every component
-- 🧭 Routing module with **3+ named routes**
-- 🔁 `@for` loops and `@if` conditional rendering
-- 🔐 JWT authentication with HTTP interceptor
-- 🚪 Login / Logout flow
-- 🌐 Angular `HttpClient` service layer
-- ⚠️ Graceful API error handling
+1. Create **interfaces and services** to interact with back-end APIs
+2. At least **4 (click) events** that trigger API requests
+3. At least **4 form controls** using `[(ngModel)]` (FormsModule)
+4. Apply basic CSS styling to components
+5. Set up the **Routing module** with at least 3 named routes and navigation between pages
+6. Use `@for` to loop over data and `@if` for conditional rendering (Angular 17+; legacy `*ngFor` / `*ngIf` accepted on older versions)
+7. **JWT authentication:** HTTP interceptor, login page, logout functionality
+8. At least 1 **Angular Service** using **HttpClient** for all API communication
+9. Handle API errors gracefully (e.g., display error messages to the user on failed requests)
 
 ---
 
-## ⚙️ Back-End Architecture *(Django + DRF)*
+## ⚙️ Back-End Requirements (Django + DRF)
 
-A clean, scalable REST API built with best practices in mind.
-
-**Key implementations:**
-- 🗂 **4+ models** with relational integrity
-- 🔗 **2+ ForeignKey** relationships
-- 🧵 **2 serializers** using `serializers.Serializer`
-- 🧶 **2 serializers** using `serializers.ModelSerializer`
-- 🛠 **2 Function-Based Views** (FBV)
-- 🏗 **2 Class-Based Views** (CBV) via `APIView`
-- 📡 REST endpoints fully integrated with the front-end
+1. Define at least **4 models**
+2. Optionally, create 1 custom model manager
+3. Include at least **2 ForeignKey relationships** between models
+4. **Serializers:**
+   - At least 2 from **`serializers.Serializer`**
+   - At least 2 from **`serializers.ModelSerializer`**
+5. **Views:**
+   - At least 2 **Function-Based Views (FBV)** using DRF decorators
+   - At least 2 **Class-Based Views (CBV)** using `APIView`
+6. **Token-based authentication** with login and logout endpoints
+7. Provide **full CRUD operations** for at least one model
+8. When creating objects, **link them to the authenticated user** (e.g., `request.user`)
+9. Configure **CORS** (`django-cors-headers`) to allow requests from the Angular dev server
+10. Prepare a **Postman collection** with all requests (including example responses) committed to the repo
 
 ---
 
@@ -178,8 +177,8 @@ This project is built for **educational purposes** as part of a university full-
 
 ### 🌐 *"The world is big. Let's find your place in it."*
 
-
 </div>
+
 
 # CountryfitFrontend
 
