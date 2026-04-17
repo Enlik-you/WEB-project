@@ -1,3 +1,187 @@
+<div align="center">
+
+# 🌍 GoGlobe
+
+### *Find your perfect country to call home.*
+
+**A full-stack travel platform that helps users discover the most suitable country to relocate to — based on personal preferences, life goals, and real-world data.**
+
+---
+
+![Angular](https://img.shields.io/badge/Frontend-Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![Django](https://img.shields.io/badge/Backend-Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![DRF](https://img.shields.io/badge/API-DRF-ff1709?style=for-the-badge&logo=django&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JWT](https://img.shields.io/badge/Auth-JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
+
+![Status](https://img.shields.io/badge/status-in%20development-yellow?style=flat-square)
+![License](https://img.shields.io/badge/license-Educational-blue?style=flat-square)
+![Made with love](https://img.shields.io/badge/made%20with-%E2%9D%A4-red?style=flat-square)
+
+</div>
+
+---
+
+## ✈️ About the Project
+
+**GoGlobe** is a modern web platform for people who dream of living abroad but don't know where to start. Whether you're a student, a professional, or just someone chasing a better life — GoGlobe helps you explore countries, compare relocation options, and make the decision with confidence.
+
+Built as a full-stack application with **Angular** on the client side and **Django + DRF** on the server side.
+
+---
+
+## 🎯 Who Is It For?
+
+> *"Choosing a country shouldn't feel like guessing."*
+
+- 🎓 **Students** looking for the best country to study in
+- 💼 **Professionals** seeking better career opportunities abroad
+- 🧳 **Future migrants** exploring long-term relocation
+- ✨ **Travelers** who want structured, data-driven guidance
+
+---
+
+## 🚀 Main Features
+
+| Category | Features |
+|----------|----------|
+| 🔍 **Discovery** | Smart country search based on preferences |
+| ⚖️ **Comparison** | Side-by-side country comparison |
+| 📋 **Information** | Visa, migration, and legal details |
+| 💰 **Finance** | Cost of living overview |
+| 🎓 **Opportunities** | Jobs, education, and career paths |
+| 🌤 **Lifestyle** | Climate, language, and cultural insights |
+| 🔐 **Auth** | Secure user registration with JWT |
+| ⭐ **Personalization** | Tailored recommendations for each user |
+
+---
+
+## 🖥️ Front-End Architecture *(Angular)*
+
+The Angular client is designed around clarity, modularity, and clean API communication.
+
+**Key implementations:**
+- 🧩 Services and interfaces for API interaction
+- 🖱️ At least **4 click events** triggering API requests
+- 📝 At least **4 form controls** using `[(ngModel)]`
+- 🎨 Custom CSS styling for every component
+- 🧭 Routing module with **3+ named routes**
+- 🔁 `@for` loops and `@if` conditional rendering
+- 🔐 JWT authentication with HTTP interceptor
+- 🚪 Login / Logout flow
+- 🌐 Angular `HttpClient` service layer
+- ⚠️ Graceful API error handling
+
+---
+
+## ⚙️ Back-End Architecture *(Django + DRF)*
+
+A clean, scalable REST API built with best practices in mind.
+
+**Key implementations:**
+- 🗂 **4+ models** with relational integrity
+- 🔗 **2+ ForeignKey** relationships
+- 🧵 **2 serializers** using `serializers.Serializer`
+- 🧶 **2 serializers** using `serializers.ModelSerializer`
+- 🛠 **2 Function-Based Views** (FBV)
+- 🏗 **2 Class-Based Views** (CBV) via `APIView`
+- 📡 REST endpoints fully integrated with the front-end
+
+---
+
+## 🧱 Planned Data Models
+
+```
+User  ──┬──▶  FavoriteCountry  ──▶  Country
+        │                             │
+        └──▶  Review                  ├──▶  Category
+                                      ├──▶  VisaInfo
+                                      └──▶  RelocationOption
+```
+
+- **User** — profile and authentication
+- **Country** — core country data
+- **Category** — country groupings (e.g. Europe, Asia, etc.)
+- **RelocationOption** — study, work, family, investment
+- **VisaInfo** — visa types and requirements
+- **Review** — user feedback on countries
+- **FavoriteCountry** — saved destinations per user
+
+---
+
+## 🛠 Tech Stack
+
+<table>
+<tr>
+<td valign="top" width="33%">
+
+### 🎨 Front-End
+- Angular
+- TypeScript
+- HTML5
+- CSS3
+
+</td>
+<td valign="top" width="33%">
+
+### ⚙️ Back-End
+- Django
+- Django REST Framework
+- Python
+
+</td>
+<td valign="top" width="33%">
+
+### 🧰 Tools
+- Git & GitHub
+- Postman
+- VS Code
+
+</td>
+</tr>
+</table>
+
+---
+
+## 👥 Team
+
+| Name | Role |
+|------|------|
+| **Atimbekova Yenlik** | Full-stack Developer |
+| **Symbat Mukhamedkarim** | Full-stack Developer |
+| **Inkar Bakhytkali** | Full-stack Developer |
+
+---
+
+## 📍 Project Status
+
+> 🚧 **In active development**
+
+- [x] Repository initialized
+- [x] README documented
+- [x] Angular project template created
+- [ ] Django backend scaffolding
+- [ ] Authentication flow
+- [ ] Core features (search, compare, details)
+- [ ] Final integration & testing
+
+---
+
+## 🎓 Purpose
+
+This project is built for **educational purposes** as part of a university full-stack development course — combining theoretical knowledge with real-world engineering practices.
+
+---
+
+<div align="center">
+
+### 🌐 *"The world is big. Let's find your place in it."*
+
+**Made with ❤️ by the GoGlobe Team**
+
+</div>
+
 # CountryfitFrontend
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.20.
