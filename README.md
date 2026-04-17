@@ -178,7 +178,6 @@ This project is built for **educational purposes** as part of a university full-
 
 ### 🌐 *"The world is big. Let's find your place in it."*
 
-**Made with ❤️ by the GoGlobe Team**
 
 </div>
 
